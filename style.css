@@ -296,6 +296,7 @@
     width: 55px;
     height: 55px;
     margin: 20px 10px;
+    margin-top: 20px;
 }
 
 .topnav a {
@@ -345,7 +346,7 @@
   }
 }
 @media (max-width: 460px) {
-    .part___one{
+    .part__one{
         display: block;
     }
     .navbar__three {
@@ -355,4 +356,3 @@
         display: block;
     }
 }
-
