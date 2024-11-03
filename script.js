@@ -11,13 +11,12 @@ function showSlides(n) {
     if (n < 0) { slideIndex = slides.length - 1 }
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        slides[i].classList.remove("fade");  // remove fade effect
+        slides[i].classList.remove("fade");  
     }
     slides[slideIndex].style.display = "block";
-    slides[slideIndex].classList.add("fade"); // add fade effect
+    slides[slideIndex].classList.add("fade"); 
 }
 
-// Start the first slide
 showSlides(slideIndex);
 
 
