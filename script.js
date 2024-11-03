@@ -29,3 +29,26 @@ function myFunction() {
       x.className = "topnav";
     }
 }
+
+
+let slideeIndex = 0;
+showSlides(slideeIndex);
+
+function changeSlide(n) {
+    showSlides(slideeIndex += n);
+}
+
+function showSlides(n) {
+    const slidees = document.getElementsByClassName("slidee");
+    if (n >= slidees.length) { slideeIndex = 0 }
+    if (n < 0) { slideIndex = slidees.length - 1 }
+    for (let i = 0; i < slidees.length; i++) {
+        slidees[i].style.display = "none";
+        slidees[i].classList.remove("fadee");  // remove fade effect
+    }
+    slidees[slideeIndex].style.display = "block";
+    slidees[slideeIndex].classList.add("fadee"); // add fade effect
+}
+
+// Start the first slide
+showSlides(slideeIndex);
